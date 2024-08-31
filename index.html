@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Alexander Seisdedos</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="https://www.linkedin.com/in/alexander-seisdedos-186142240/">linkedin</a></li>
+                        <li><a href="https://x.com/alexander_45p">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/main_photo.jpeg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>yo soy <span class="input">Frontend Developer backend</span></h5>
+                    <h1>Alexander Seisdedos</h1>
+                    <p> Hola Mi Nombre Es Alexander Román Seisdedos Nací El 27 De Marzo De 2002 Soy De Argentina y Soy Programador FreeLancer Desde 2019 Cuando empecé Tomando Trabajos De Programador Backend y Me Fui Expandiendo a Otros Rublos y Tecnologías Dentro De La Programación Hasta El día De Hoy Donde Me Sigo Expandiendo y Aprendiendo Para Estar Al Día Con Las Nuevas Tecnologías De La Programación y Trabajar De Manera FreeLancer Como Programador Front End, Back End, Full Stack Con Conocimientos y Experiencia En WordPress, Bootstrap, Base De Datos. Con Conocimientos En La Creación De API REST Utilizando NodeJs, Express y MySQL, Git Creación De Web Comerciales Paginas Locales y Con Experiencia De En Ambito Backend y Full Stack</p>
+                    <br>
+                    <!-- <h3>contacto</h3> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quia a, asperiores reprehenderit quo ab doloremque, sit iusto nihil mollitia praesentium sapiente, labore ullam atque sequi. Unde facilis odio reiciendis?</p> -->
+                    <div class="btn-group">
+                       <a href="cv1.pdf" download="pruba" class="btn active" >Download CV</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/alexander-seisdedos-186142240/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/alexander_seisdedos/"><i class="fa-brands fa-instagram"></i></a>
+                       
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+     
+</body>
+</html>
